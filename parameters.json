@@ -87,7 +87,7 @@
             "value": "pooja"
         },
         "adminPublicKey": {
-            "value": null
+            "value": "pooja@123"
         },
         "diagnosticsStorageAccountName": {
             "value": "respdiag344"
