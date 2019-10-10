@@ -87,7 +87,7 @@
             "value": "pooja"
         },
         "adminPublicKey": {
-            "value": "pooja@123"
+            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD0GEhfLih0fKoEBe2CwE0FYDbYc6FreZedcrhWKy5kM1tCi4GedWK7xuLw76t8TRdUsKf62REfvuJqnpah2+cRtCAdxpw6Hw7DLQEk3I7r4nSpIfGBZUv0ovtXG572cUxACalySZQZeXBXUEDQR35lUp/MeyAWmVKF8ABuuczAIFW9EGieBBICYGzMMqFRjXzKBQNZlY8/pnaCcvw8CXkI3dkfNo3EPrpH+PfBIEisZlGn7XLQ6OV3y4wGzHDcIVT6dx0DHTeYh6uQ8SPajStksPIunAyvLPmH44Ypl+UhLBovu8q5X8gQweNWQs0qfBBV6Gl53GGDdfUweYX+vOKv pooja@pooja-Latitude-5480"
         },
         "diagnosticsStorageAccountName": {
             "value": "respdiag344"
