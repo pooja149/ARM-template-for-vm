@@ -2,104 +2,24 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "resourceName": {
+            "value": "rthhv"
+        },
         "location": {
-            "value": "westindia"
+            "value": "centralus"
         },
-        "networkInterfaceName": {
-            "value": "vmp605"
+        "platformFaultDomainCount": {
+            "value": 2
         },
-        "networkSecurityGroupName": {
-            "value": "vmp-nsg"
+        "platformUpdateDomainCount": {
+            "value": 5
         },
-        "networkSecurityGroupRules": {
-            "value": [
-                {
-                    "name": "HTTP",
-                    "properties": {
-                        "priority": 300,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
-                        "destinationPortRange": "80"
-                    }
-                },
-                {
-                    "name": "SSH",
-                    "properties": {
-                        "priority": 320,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
-                        "destinationPortRange": "22"
-                    }
-                }
-            ]
+        "skuName": {
+            "value": "Aligned"
         },
-        "subnetName": {
-            "value": "default"
-        },
-        "virtualNetworkName": {
-            "value": "resp-vnet"
-        },
-        "addressPrefixes": {
-            "value": [
-                "10.1.1.0/24"
-            ]
-        },
-        "subnets": {
-            "value": [
-                {
-                    "name": "default",
-                    "properties": {
-                        "addressPrefix": "10.1.1.0/24"
-                    }
-                }
-            ]
-        },
-        "publicIpAddressName": {
-            "value": "vmp-ip"
-        },
-        "publicIpAddressType": {
-            "value": "Dynamic"
-        },
-        "publicIpAddressSku": {
-            "value": "Basic"
-        },
-        "virtualMachineName": {
-            "value": "vmp"
-        },
-        "virtualMachineRG": {
-            "value": "resp"
-        },
-        "osDiskType": {
-            "value": "Premium_LRS"
-        },
-        "virtualMachineSize": {
-            "value": "Standard_B1ls"
-        },
-        "adminUsername": {
-            "value": "pooja"
-        },
-        "adminPublicKey": {
-            "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD0GEhfLih0fKoEBe2CwE0FYDbYc6FreZedcrhWKy5kM1tCi4GedWK7xuLw76t8TRdUsKf62REfvuJqnpah2+cRtCAdxpw6Hw7DLQEk3I7r4nSpIfGBZUv0ovtXG572cUxACalySZQZeXBXUEDQR35lUp/MeyAWmVKF8ABuuczAIFW9EGieBBICYGzMMqFRjXzKBQNZlY8/pnaCcvw8CXkI3dkfNo3EPrpH+PfBIEisZlGn7XLQ6OV3y4wGzHDcIVT6dx0DHTeYh6uQ8SPajStksPIunAyvLPmH44Ypl+UhLBovu8q5X8gQweNWQs0qfBBV6Gl53GGDdfUweYX+vOKv pooja@pooja-Latitude-5480"
-        },
-        "diagnosticsStorageAccountName": {
-            "value": "respdiag344"
-        },
-        "diagnosticsStorageAccountId": {
-            "value": "Microsoft.Storage/storageAccounts/respdiag344"
-        },
-        "diagnosticsStorageAccountType": {
-            "value": "Standard_LRS"
-        },
-        "diagnosticsStorageAccountKind": {
-            "value": "Storage"
+ "proximityPlacementGroupId": {
+            "value": "None"
         }
+
     }
 }
